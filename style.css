@@ -1,0 +1,236 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+html {
+	width: 80vw;
+	margin: auto;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+}
+
+nav h1 {
+	color: #17bcc2;
+	text-transform: uppercase;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.nav-items {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	list-style: none;
+	color: #17bcc2;
+}
+.nav-item {
+	margin-left: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.hero {
+	background: url('./assets/hero.jpeg') no-repeat center;
+	background-size: cover;
+	height: 90vh;
+	width: 100%;
+	position: relative;
+}
+
+.hero-content {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.hero-content h1 {
+	font-size: 4rem;
+	color: white;
+	margin-bottom: 2px;
+	text-transform: uppercase;
+}
+.hero-content h3 {
+	font-size: 1.5rem;
+	color: white;
+	line-height: 0.4rem;
+	text-transform: uppercase;
+}
+
+.hero-buttons {
+	display: flex;
+	margin-top: 30px;
+	justify-content: space-between;
+}
+
+.hero-content button {
+	padding: 0.8rem 2rem;
+	background-color: #17bcc2;
+	border: none;
+	font-size: 1rem;
+	color: white;
+	border-radius: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.page-break {
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 30px;
+	border-top: 3px solid #333;
+	border-bottom: 3px solid #333;
+	text-transform: uppercase;
+}
+
+.activities {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	height: 300px;
+	gap: 10px;
+}
+
+.grid-item {
+	color: white;
+	font-size: 2rem;
+}
+
+.wine {
+	background: url('./assets/Santorini_Wine.jpeg') no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+.wine::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+}
+.activities p {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	padding: 10px;
+}
+.boat {
+	background: url('./assets/Santorini_boat.jpeg') no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+.boat::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+.cathedral {
+	background: url('./assets/Santorini_Cathedral.jpeg') no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+.cathedral::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+.landmark {
+	background: url('./assets/Santorini_Landmark.jpeg') no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+.landmark::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.views {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: 300px;
+	gap: 10px;
+}
+
+.view1 {
+	background: url('./assets/Santorini_View2.jpeg') no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+.view2 {
+	background: url('./assets/Santorini_View1.jpeg') no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+.view3 {
+	background: url('./assets/Santorini_View3.jpeg') no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+
+footer {
+	margin-top: 30px;
+	height: 20vh;
+	background-color: #333;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footer-links {
+	padding: 30px;
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-links h1 {
+	color: #17bcc2;
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+.footer-items {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	list-style: none;
+	color: white;
+}
+.footer-item {
+	margin-left: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.footer-info {
+	color: white;
+	padding: 30px;
+}
