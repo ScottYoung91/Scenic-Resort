@@ -307,20 +307,41 @@ footer {
 	html {
 		width: 100vw;
 	}
+	nav {
+		background-color: #17bcc2;
+		height: 40px;
+	}
+
+	nav h1 {
+		color: white;
+		text-align: center;
+		text-transform: uppercase;
+		margin-left: 20px;
+	}
+
+	.logo img {
+		border-radius: 50%;
+		height: 30px;
+		width: 30px;
+	}
 	.nav-items {
 		display: none;
 	}
 	.logo {
 		display: flex;
 		width: 100%;
-		justify-content: space-between;
+		justify-content: center;
 	}
 
 	.hero {
-		height: 40vh;
+		height: 60vh;
 	}
 	.hero-content {
 		display: none;
+	}
+	.page-break {
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 	.activities {
 		grid-template-columns: repeat(2, 1fr);
