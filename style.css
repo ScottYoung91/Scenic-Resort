@@ -86,6 +86,43 @@ nav h1 {
 	text-transform: uppercase;
 }
 
+.mobile-hero-content {
+	background-color: #17bcc2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.mobile-hero-content h1 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 2px;
+	text-transform: uppercase;
+}
+.mobile-hero-content h3 {
+	font-size: 1rem;
+	color: white;
+	line-height: 0.4rem;
+	text-transform: uppercase;
+}
+.mobile-hero-buttons {
+	display: flex;
+	margin-top: 30px;
+	justify-content: space-between;
+}
+
+.mobile-hero-content button {
+	padding: 0.8rem 2rem;
+	background-color: white;
+	border: none;
+	font-size: 1rem;
+	color: #17bcc2;
+	border-radius: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0 0.7rem 0.7rem 0.7rem;
+}
+
 .page-break {
 	width: 100%;
 	text-align: center;
@@ -233,4 +270,70 @@ footer {
 .footer-info {
 	color: white;
 	padding: 30px;
+}
+
+/* Media Queries */
+
+/* Large Screen */
+@media (min-width: 1024px) {
+	.mobile-hero-content {
+		display: none;
+	}
+}
+
+/* Tablet and Small Screen*/
+
+@media (min-width: 481px) and (max-width: 1024px) {
+	.hero {
+		height: 40vh;
+	}
+	.hero-content {
+		display: none;
+	}
+	.activities {
+		grid-template-columns: repeat(2, 1fr);
+		height: 400px;
+	}
+	.views {
+		grid-template-columns: repeat(2, 1fr);
+		height: 200px;
+	}
+	.view2 {
+		display: none;
+	}
+}
+
+@media (max-width: 481px) {
+	.nav-items {
+		display: none;
+	}
+	.logo {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.hero {
+		height: 40vh;
+	}
+	.hero-content {
+		display: none;
+	}
+	.activities {
+		grid-template-columns: repeat(2, 1fr);
+		height: 300px;
+	}
+	.grid-item {
+		font-size: 1.2rem;
+	}
+	.views {
+		grid-template-columns: repeat(1, 1fr);
+		height: 200px;
+	}
+	.view2 {
+		display: none;
+	}
+	.view3 {
+		display: none;
+	}
 }
