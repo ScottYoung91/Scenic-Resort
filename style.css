@@ -304,6 +304,9 @@ footer {
 }
 
 @media (max-width: 481px) {
+	html {
+		width: 100vw;
+	}
 	.nav-items {
 		display: none;
 	}
@@ -335,5 +338,31 @@ footer {
 	}
 	.view3 {
 		display: none;
+	}
+	footer {
+		height: 30vh;
+	}
+
+	.footer-links {
+		padding: 10px;
+	}
+
+	.footer-links h1 {
+		color: #17bcc2;
+		text-transform: uppercase;
+		margin-left: 5px;
+		font-size: 2rem;
+	}
+
+	.footer-items {
+		display: none;
+	}
+	.footer-info {
+		text-align: center;
+		color: white;
+		padding: 30px;
+	}
+	.footer-info p {
+		margin-bottom: 5px;
 	}
 }
